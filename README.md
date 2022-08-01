@@ -42,7 +42,7 @@ python load_clevr_with_masks.py --tf_records_path {path_for_tf_records} --target
 ```
 
 ### Citation
-```
+```bibtex
 @inproceedings{johnson2017clevr,
   title={CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning},
   author={Johnson, Justin and Hariharan, Bharath and van der Maaten, Laurens
