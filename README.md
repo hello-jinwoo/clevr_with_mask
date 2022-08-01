@@ -24,6 +24,7 @@ You can see more output samples in sample folder. We generate and save object ma
     <td ><center><img src="sample/CLEVR_mask_0_0.png" height="180"> </center></td>
     <td ><center><img src="sample/CLEVR_mask_0_1.png" height="180"> </center></td>
     <td ><center><img src="sample/CLEVR_mask_0_2.png" height="180"> </center></td>
+    <td ><center><img src="sample/CLEVR_mask_0_3.png" height="180"> </center></td>
   </tr>
 </table>
 
