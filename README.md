@@ -1,10 +1,23 @@
-## clevr_with_masks
+# clevr_with_masks
 This repository contains the code for generating dataset in [official CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) format from tfrecords file which is provided by [deepmind's multi_object_datasets repository](https://github.com/deepmind/multi_object_datasets).
+
+## Added metadata
+We added bounding box for each objects and you can see the bbox info in json files. You can access bbox data as below.
+
+```python
+json_data = json.load(your_json_file)
+bbox = json_data['scenes'][image_id]['objects'][object_id]['bbox']
+```
+We followed the x,y index order of pixel_coords in original data. Hence, if you want to extract the image in bbox, you can slice image as below.
+```python
+# image in numpy form, [H, W, C], and bbox from above
+object_in_bbox = image[bbox[2]: bbox[3], bbox[0]: bbox[1]]
+```
 
 ## Preparation
 - Environment
-    - tensorflow (I used 2.4.1 but other versions will be okay)
-    - numpy I used 1.19.5 but other versions will be okay)
+    - tensorflow (we used 2.4.1 but other versions will be okay)
+    - numpy (we used 1.19.5 but other versions will be okay)
 - download tfrecords [[here]](https://github.com/deepmind/multi_object_datasets)
 
 ## Run
