@@ -43,6 +43,13 @@ python load_clevr_with_masks.py --tf_records_path {path_for_tf_records} --target
 
 ### Citation
 ```
+@inproceedings{johnson2017clevr,
+  title={CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning},
+  author={Johnson, Justin and Hariharan, Bharath and van der Maaten, Laurens
+          and Fei-Fei, Li and Zitnick, C Lawrence and Girshick, Ross},
+  booktitle={CVPR},
+  year={2017}
+}
 @misc{multiobjectdatasets19,
   title={Multi-Object Datasets},
   author={Kabra, Rishabh and Burgess, Chris and Matthey, Loic and
