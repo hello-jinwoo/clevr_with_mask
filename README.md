@@ -13,7 +13,20 @@ python load_clevr_with_masks.py --tf_records_path {path_for_tf_records} --target
 ```
 
 ## Output sample
-You can see output samples in sample folder. We generate and save object masks in png form.
+You can see more output samples in sample folder. We generate and save object masks in png form.
+<table>
+  <tr>
+    <th scope="row">Image</th> 
+    <td ><center><img src="sample/CLEVR_image_0.png" height="180"> </center></td>
+  </tr>
+  <tr>
+    <th scope="row">Masks</th>
+    <td ><center><img src="sample/CLEVR_mask_0_0.png" height="180"> </center></td>
+    <td ><center><img src="sample/CLEVR_mask_0_1.png" height="180"> </center></td>
+    <td ><center><img src="sample/CLEVR_mask_0_2.png" height="180"> </center></td>
+  </tr>
+</table>
+
 
 ### Citation
 ```
