@@ -8,7 +8,7 @@ This repository contains the code for generating dataset in [official CLEVR data
 - download tfrecords [[here]](https://github.com/deepmind/multi_object_datasets)
 
 ## Run
-```python
+```
 python load_clevr_with_masks.py --tf_records_path {path_for_tf_records} --target_path {path_for_results}
 ```
 
