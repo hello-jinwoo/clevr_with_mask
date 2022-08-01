@@ -1,6 +1,22 @@
 # clevr_with_masks
 This repository contains the code for generating dataset in [official CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) format from tfrecords file which is provided by [deepmind's multi_object_datasets repository](https://github.com/deepmind/multi_object_datasets).
 
+## Output sample
+You can see more output samples in sample folder. We generate and save object masks in png form.
+<table>
+  <tr>
+    <th scope="row">Image</th> 
+    <td ><center><img src="sample/CLEVR_image_0.png" height="180"> </center></td>
+  </tr>
+  <tr>
+    <th scope="row">Masks</th>
+    <td ><center><img src="sample/CLEVR_mask_0_0.png" height="180"> </center></td>
+    <td ><center><img src="sample/CLEVR_mask_0_1.png" height="180"> </center></td>
+    <td ><center><img src="sample/CLEVR_mask_0_2.png" height="180"> </center></td>
+    <td ><center><img src="sample/CLEVR_mask_0_3.png" height="180"> </center></td>
+  </tr>
+</table>
+
 ## Added metadata
 We added bounding box for each objects and you can see the bbox info in json files. You can access bbox data as below.
 
@@ -24,23 +40,6 @@ object_in_bbox = image[bbox[2]: bbox[3], bbox[0]: bbox[1]]
 ```
 python load_clevr_with_masks.py --tf_records_path {path_for_tf_records} --target_path {path_for_results}
 ```
-
-## Output sample
-You can see more output samples in sample folder. We generate and save object masks in png form.
-<table>
-  <tr>
-    <th scope="row">Image</th> 
-    <td ><center><img src="sample/CLEVR_image_0.png" height="180"> </center></td>
-  </tr>
-  <tr>
-    <th scope="row">Masks</th>
-    <td ><center><img src="sample/CLEVR_mask_0_0.png" height="180"> </center></td>
-    <td ><center><img src="sample/CLEVR_mask_0_1.png" height="180"> </center></td>
-    <td ><center><img src="sample/CLEVR_mask_0_2.png" height="180"> </center></td>
-    <td ><center><img src="sample/CLEVR_mask_0_3.png" height="180"> </center></td>
-  </tr>
-</table>
-
 
 ### Citation
 ```
