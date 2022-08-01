@@ -1,5 +1,5 @@
 ### clevr_with_masks
-This repository contains the code for generating dataset in [official CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) format from tfrecord file which is provided by (deepmind's multi_object_datasets repository)[https://github.com/deepmind/multi_object_datasets].
+This repository contains the code for generating dataset in [official CLEVR dataset](https://cs.stanford.edu/people/jcjohns/clevr/) format from tfrecord file which is provided by [deepmind's multi_object_datasets repository](https://github.com/deepmind/multi_object_datasets).
 
 ### Citation
 @misc{multiobjectdatasets19,
